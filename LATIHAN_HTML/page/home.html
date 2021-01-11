@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--standart karakter, huruf, simbol, angka pada html-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <div>
+        <a href="../index.html">Home</a> <!--../ Untuk mengakses folder dibagian sebelumnya--->
+        <a href="page/home.html">&nbsp;Kontak</a>
+    </div>
+    <h1>Kontak Sanbercode</h1>
+    <img src="https://sanbercode.com/assets/img/identity/logo-horizontal.svg" alt="loggo sanbercode" height="100" width="500">
+    <div>
+        <!--membuat form pesan-->
+        <form>
+            <fieldset> <!--membuat kotak-->
+                <legend>Nama dan pesan</legend>
+                <label for="nama">Nama :&nbsp;</label> <!--untuk memasangkan agar lebih rapi-->
+                <input type="text" placeholder="Nama user" id="nama"> <!--place holder transparan harus menginputkan jika diberi value maka akan muncul teks nya-->
+                <br> <br>
+
+                <label for="pesan_user">Pesan</label> <!--id dg for harus sama-->
+                <textarea cols="100" rows="7" id="pesan_user">Pesan Saya adalah:</textarea> <!--sudah ada tinggal melanjutkan-->
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Pilihan Data</legend>
+                <label>Hobbi</label> <br>
+                <input type="checkbox" name="hobi_user" value="0"> Sepak bola <br>
+                <input type="checkbox" name="hobi_user" value="2"> Memasak <br>
+                <input type="checkbox" name="hobi_user" value="3"> Menyanyi <br>
+                <br>
+                <label for="">Jenis Kelamin</label> <br>
+                <input type="radio" name="gender" value="0" checked>Laki-laki 
+                <input type="radio" name="gender" value="1"> Perempuan 
+                <br> <br>
+                <!--select option seperti drop down-->
+                <label>Pelajaran yang ingin user tanyakan</label> 
+                <select>
+                    <optgroup label="frontend">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                    </optgroup> <!--membagi grup ketika opsinya lebih bnyak lagi-->
+                    <optgroup label="backend">
+                        <option value="js">Javascript</option>
+                        <option value="db">Database</option>
+                    </optgroup>
+            </select>
+        </fieldset>
+            <input type="submit" value="Kirim Data">
+ 
+        </form>
+
+        <br><br>
+        <table border="1">
+            <caption>Daftar murid sanbercode</caption>
+            <tr>
+                <th>Nama Murid</th>
+                <th>Kota Asal</th>
+            </tr>
+            <tr>
+                <td>Afifah Hasna</td>
+                <td>Makasar</td>
+            </tr>
+            <tr>
+                <td>Lugas Munayasika</td>
+                <td>Magetan</td>
+            </tr>
+        </table>
+        <dl> <!--data list untuk jika ada deskripsinya-->
+            <dt>Afifah Hasna</dt> <!--data term-->
+            <dd>User pertama sanbercode</dd>
+            <dt>Lugas Munayasika</dt> <!--data term-->
+            <dd>User kedua sanbercode</dd>
+        </dl>
+    </div>
+    <p> &copy; Lugas Munayasika</p>
+
+
+</body>
+</html>
